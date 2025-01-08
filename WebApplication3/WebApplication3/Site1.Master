@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site1.master.cs" Inherits="Site1" %>
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <title>Really Great Place</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+        header {
+            background-color: #1c3a36;
+            text-align: center;
+            padding: 30px;
+        }
+        header h1 {
+            font-size: 24px;
+            margin: 0;
+            color: #fcb900;
+        }
+        header p {
+            font-size: 18px;
+            margin: 5px 0 15px;
+        }
+        header .buttons {
+            display: inline-block;
+            margin: 15px 0;
+        }
+        header .buttons a {
+            margin: 0 5px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #fcb900;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .content {
+            display: flex;
+            padding: 20px;
+            justify-content: space-around;
+            background-color: #f3f3f3;
+            color: #000;
+        }
+        .content div {
+            flex: 1;
+            margin: 0 10px;
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1c3a36;
+            color: #fff;
+        }
+        .footer a {
+            color: #fcb900;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <h1>All your finances in one place.</h1>
+            <p>We are the future of your business.</p>
+            <div class="buttons">
+                <a href="#">ONLINE</a>
+                <a href="#">ACCESSIBLE</a>
+            </div>
+        </header>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+
+        
+        <div style="background:#fac559">
+            <CENTER><b><p style="font-size:22px;color:#462b07;">REALLY GREAT PLACE</p></b></CENTER>
+        </div>
+    </form>
+</body>
+</html>
