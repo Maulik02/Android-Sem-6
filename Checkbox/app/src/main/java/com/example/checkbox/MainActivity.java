@@ -7,6 +7,7 @@ package com.example.checkbox;
         import android.widget.Button;
         import android.widget.CheckBox;
         import android.widget.TextView;
+        import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     result.setText(selectedTeam.toString());
                 }
+                Toast.makeText(MainActivity.this, selectedTeam.toString(), Toast.LENGTH_SHORT).show();
             }
         });
     }
